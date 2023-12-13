@@ -7,7 +7,46 @@
     <title>Vite Chat App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="chat-app">
+      <div class="side-bar">
+        <div class="top-bar">
+          <div class="logo">
+            <img src="/vite.svg" alt="chat-app-logo">
+          </div>
+          <div class="actions">
+            <div class="action circle">
+              <i class="ri-add-line"></i>
+            </div>
+            <div class="action">
+              <i class="ri-more-2-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Search here">
+          <div class="buttons">
+            <div class="button">
+              <i class="ri-time-line"></i>
+            </div>
+            <div class="button">
+              <i class="ri-group-line"></i>
+            </div>
+            <div class="button">
+              <i class="ri-contacts-book-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="active">
+            <div class="heading">Active Now</div>
+          </div>
+          <div class="idle">
+            <div class="heading">Recent Active Profile</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content"></div>
+    </div>
     <script type="module" src="/assets/scripts/main.js"></script>
   </body>
 </html>
