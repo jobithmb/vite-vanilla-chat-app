@@ -22,3 +22,23 @@ for( let i = 0; i < 10; i++) {
 }
 console.log(contacts);
 
+const contactsList = document.getElementById('contacts-list')
+let listHTML = ''
+contacts.forEach(contact => {
+    listHTML += `
+    <li class="contact ${contact.isOnline? 'online': 'offline'}">
+        <div class="profile-image">
+        <img
+            src="${contact.picture}"
+            alt="contact-image"
+        />
+        </div>
+        <div class="details">
+        <div class="name">${contact.getFullName()}</div>
+        <div class="last-message">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </li>
+    `
+})
+contactsList.innerHTML = listHTML
+
