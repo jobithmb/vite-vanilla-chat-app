@@ -74,6 +74,15 @@
                 font-size: 20px;
                 color: #C7D8CF;
                 cursor: pointer;
+                padding: 0px 5px;
+                border-radius: 100%;
+                transition: all ease-in-out 0.2s;
+
+                &.active,
+                &:hover {
+                    background-color: #FFF;
+                    color: #267150;
+                }
             }
         }
     }

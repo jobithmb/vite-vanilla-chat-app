@@ -4,6 +4,9 @@ import 'remixicon/fonts/remixicon.css'
 import Contact from './Contact'
 import { faker } from '@faker-js/faker';
 
+
+import './tabs'
+
 let contacts = []
 
 //new Contact('John', 'Doe', 25, true)
@@ -17,6 +20,5 @@ for( let i = 0; i < 10; i++) {
         )
     )
 }
-
 console.log(contacts);
 

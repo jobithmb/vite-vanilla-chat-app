@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
       <div class="side-bar">
         <div class="top-bar">
           <div class="logo">
-            <img src="/Chat.png" alt="chat-app-logo">
+            <img src="/Chat.png" alt="chat-app-logo" />
           </div>
           <div class="actions">
             <div class="action circle">
@@ -23,66 +23,120 @@
           </div>
         </div>
         <div class="search">
-          <input type="search" placeholder="Search here">
+          <input type="search" placeholder="Search here" />
           <div class="buttons">
-            <div class="button">
+            <div class="button active" data-target="recent">
               <i class="ri-time-line"></i>
             </div>
-            <div class="button">
+            <div class="button" data-target="groups">
               <i class="ri-group-line"></i>
             </div>
-            <div class="button">
+            <div class="button" data-target="contacts">
               <i class="ri-contacts-book-line"></i>
             </div>
           </div>
         </div>
-        
-        <div class="contacts">
-          <div class="active">
-            <div class="heading">Active Now</div>
-            <ul class="contacts-list">
-              <li class="contact online">
-                <div class="profile-image">
-                  <img src="https://mighty.tools/mockmind-api/content/human/72.jpg" alt="contact-image">
-                </div>
-                <div class="details">
-                  <div class="name">John Doe</div>
-                  <div class="last-message">Lorem ipsum dolor sit amet.</div>
-                </div>
-              </li>
-              <li class="contact online">
-                <div class="profile-image">
-                  <img src="https://mighty.tools/mockmind-api/content/human/71.jpg" alt="contact-image">
-                </div>
-                <div class="details">
-                  <div class="name">Jane Doe</div>
-                  <div class="last-message">Lorem ipsum dolor sit amet.</div>
-                </div>
-              </li>
 
-            </ul>
+        <div class="tabs">
+          <div class="tab active" data-name="recent">
+            <div class="contacts">
+              <div class="active">
+                <div class="heading">Active Now</div>
+                <ul class="contacts-list">
+                  <li class="contact online">
+                    <div class="profile-image">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/72.jpg"
+                        alt="contact-image"
+                      />
+                    </div>
+                    <div class="details">
+                      <div class="name">John Doe</div>
+                      <div class="last-message">
+                        Lorem ipsum dolor sit amet.
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact online">
+                    <div class="profile-image">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/71.jpg"
+                        alt="contact-image"
+                      />
+                    </div>
+                    <div class="details">
+                      <div class="name">Jane Doe</div>
+                      <div class="last-message">
+                        Lorem ipsum dolor sit amet.
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="idle">
+                <div class="heading">Recent Active Profile</div>
+                <div class="contacts-list">
+                  <li class="contact">
+                    <div class="profile-image">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/73.jpg"
+                        alt="contact-image"
+                      />
+                    </div>
+                    <div class="details">
+                      <div class="name">Murphy Doe</div>
+                      <div class="last-message">
+                        Lorem ipsum dolor sit amet.
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact">
+                    <div class="profile-image">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/70.jpg"
+                        alt="contact-image"
+                      />
+                    </div>
+                    <div class="details">
+                      <div class="name">Jacob Doe</div>
+                      <div class="last-message">
+                        Lorem ipsum dolor sit amet.
+                      </div>
+                    </div>
+                  </li>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="idle">
-            <div class="heading">Recent Active Profile</div>
-            <div class="contacts-list">
-              <li class="contact">
-                <div class="profile-image">
-                  <img src="https://mighty.tools/mockmind-api/content/human/73.jpg" alt="contact-image">
-                </div>
-                <div class="details">
-                  <div class="name">Murphy Doe</div>
-                  <div class="last-message">Lorem ipsum dolor sit amet.</div>
-                </div>
-              </li>
-              <li class="contact">
-                <div class="profile-image">
-                  <img src="https://mighty.tools/mockmind-api/content/human/70.jpg" alt="contact-image">
-                </div>
-                <div class="details">
-                  <div class="name">Jacob Doe</div>
-                  <div class="last-message">Lorem ipsum dolor sit amet.</div>
-                </div>
-              </li>
+          <div class="tab" data-name="groups">groups</div>
+          <div class="tab" data-name="contacts">
+            <div class="contacts">
+              <ul class="contacts-list">
+                <li class="contact online">
+                  <div class="profile-image">
+                    <img
+                      src="https://mighty.tools/mockmind-api/content/human/72.jpg"
+                      alt="contact-image"
+                    />
+                  </div>
+                  <div class="details">
+                    <div class="name">John Doe</div>
+                    <div class="last-message">Lorem ipsum dolor sit amet.</div>
+                  </div>
+                </li>
+                <li class="contact online">
+                  <div class="profile-image">
+                    <img
+                      src="https://mighty.tools/mockmind-api/content/human/71.jpg"
+                      alt="contact-image"
+                    />
+                  </div>
+                  <div class="details">
+                    <div class="name">Jane Doe</div>
+                    <div class="last-message">Lorem ipsum dolor sit amet.</div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
